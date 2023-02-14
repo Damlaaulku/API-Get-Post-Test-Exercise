@@ -13,7 +13,7 @@ class DataCose:
     def get_response(self):
         headers = {
             'accept': 'application/json',
-            'authorization': 'fFz8Z7OpPTSY7gpAFPrWntoMuo07ACjp'
+            'authorization': 'API_TOKEN'
         }
 
         response = requests.get('https://challenge-automation-engineer-xij5xxbepq-uc.a.run.app/people/', headers=headers)
@@ -36,7 +36,7 @@ class DataCose:
             },
             "id": people.get("id")
         }
-        request = requests.post('https://challenge-automation-engineer-xij5xxbepq-uc.a.run.app/contacts/', auth=("datacose","196D1115456D7"), json=json_body)
+        request = requests.post('https://challenge-automation-engineer-xij5xxbepq-uc.a.run.app/contacts/', auth=("USERNAME","PWD"), json=json_body)
         return request.json()
 
 if __name__ == "__main__":
