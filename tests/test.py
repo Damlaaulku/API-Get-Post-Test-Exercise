@@ -13,7 +13,7 @@ def test_file1_method1():
                 "lifetime_value": 125500.0
             }
         }
-        result = requests.post('https://challenge-automation-engineer-xij5xxbepq-uc.a.run.app/contacts/', auth=("datacose","196D1115456D7"), json=people).json()
+        result = requests.post('https://challenge-automation-engineer-xij5xxbepq-uc.a.run.app/contacts/', auth=("USERNAME","PWD"), json=people).json()
         print(result)
         post_result = {
             "first_name": result["first_name"],
